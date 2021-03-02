@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "3d135a36-3cbb-41ab-b1b9-533fb51cb8ca",
+		"name": "Demo C1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Client",
+			"item": [
+				{
+					"name": "/client/compte/list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/democ1/client/compte/list?numeroClient=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"democ1",
+								"client",
+								"compte",
+								"list"
+							],
+							"query": [
+								{
+									"key": "numeroClient",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/client/virement/create",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/democ1/client/virement/create?compteFromId=&compteToId=&solde=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"democ1",
+								"client",
+								"virement",
+								"create"
+							],
+							"query": [
+								{
+									"key": "compteFromId",
+									"value": ""
+								},
+								{
+									"key": "compteToId",
+									"value": ""
+								},
+								{
+									"key": "solde",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employe",
+			"item": [
+				{
+					"name": "/employe/client/create",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/democ1/employe/client/create?nom=&prenom=&rue=&codePostal=&commune=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"democ1",
+								"employe",
+								"client",
+								"create"
+							],
+							"query": [
+								{
+									"key": "nom",
+									"value": ""
+								},
+								{
+									"key": "prenom",
+									"value": ""
+								},
+								{
+									"key": "rue",
+									"value": ""
+								},
+								{
+									"key": "codePostal",
+									"value": ""
+								},
+								{
+									"key": "commune",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/employe/compte/create",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/democ1/employe/compte/create?nom=&solde=&numeroClient=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"democ1",
+								"employe",
+								"compte",
+								"create"
+							],
+							"query": [
+								{
+									"key": "nom",
+									"value": ""
+								},
+								{
+									"key": "solde",
+									"value": ""
+								},
+								{
+									"key": "numeroClient",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/employe/operation/create",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/democ1/employe/operation/create?numeroCompte=&montant=&typeOperation=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"democ1",
+								"employe",
+								"operation",
+								"create"
+							],
+							"query": [
+								{
+									"key": "numeroCompte",
+									"value": ""
+								},
+								{
+									"key": "montant",
+									"value": ""
+								},
+								{
+									"key": "typeOperation",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
